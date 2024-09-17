@@ -72,4 +72,8 @@ class UsuarioController extends Controller
     {
 
     }
+    public function function3(): void
+    {
+
+    }
 }
