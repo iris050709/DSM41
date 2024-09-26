@@ -23,6 +23,8 @@ class BookSeeder extends Seeder
                 'year' => $faker->year,
                 'genre' => $faker->word,
                 'description' => $faker->paragraph,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]);
         }
     }
