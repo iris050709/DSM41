@@ -15,10 +15,10 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $user = Usuario::all();
-        $a = Usuario::find(1);
-        return view('index', data: compact('user'));
+    $user = Usuario::all();
+    return view('index', compact('user')); 
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -33,8 +33,26 @@ class UsuarioController extends Controller
      */
     public function store(StoreUsuarioRequest $request)
     {
-        return view('store');
+        //$user = Usuario::create(['name' => 'Prueba', 'email' => 'prueba@example.com']);
+
+        $validatedData = $request->validated();
+        //dd($validatedData);
+    
+        // Crear un nuevo usuario
+        $user = Usuario::create([
+            'name' => $validatedData['name'],
+            'email' => $validatedData['email'],
+        ]);
+        
+        // Verificar si el usuario fue creado
+        if ($user) {
+            return redirect()->route('usuario.index')->with('success', 'Usuario creado exitosamente');
+        } else {
+            return redirect()->back()->with('error', 'Error al crear el usuario');
+        }
     }
+    
+
 
     /**
      * Display the specified resource.
