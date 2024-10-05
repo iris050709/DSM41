@@ -12,7 +12,7 @@ Route::get('/prueba', [UsuarioController::class, 'index'])->name('usuario.index'
 
 // Rutas para crear y almacenar un nuevo usuario
 Route::get('/create', [UsuarioController::class, 'create'])->name('usuario.create');
-Route::post('/store', [UsuarioController::class, 'store'])->name('usuario.store');
+/*Route::post('/store', [UsuarioController::class, 'store'])->name('usuario.store');*/
 
 // Rutas para editar y actualizar un usuario
 Route::get('/edit/{usuario}', [UsuarioController::class, 'edit'])->name('usuario.edit');
@@ -23,3 +23,6 @@ Route::delete('/destroy/{usuario}', [UsuarioController::class, 'destroy'])->name
 
 // Ruta para mostrar un usuario específico
 Route::get('/show/{usuario}', [UsuarioController::class, 'show'])->name('usuario.show');
+Route::get('/usuario/creado', [UsuarioController::class, 'create']);
+Route::post('/usuario/creado', [UsuarioController::class, 'store'])->name('user.store');
+Route::get('/usuario/list', [UsuarioController::class,'list'])->name('user.list');
