@@ -26,3 +26,6 @@ Route::get('/show/{usuario}', [UsuarioController::class, 'show'])->name('usuario
 Route::get('/usuario/creado', [UsuarioController::class, 'create']);
 Route::post('/usuario/creado', [UsuarioController::class, 'store'])->name('user.store');
 Route::get('/usuario/list', [UsuarioController::class,'list'])->name('user.list');
+Route::get('/usuario/update/{id}', [UsuarioController::class,'edit'])->name('user.update');
+Route::post('/usuario/update', [UsuarioController::class,'update'])->name('user.update.data');
+Route::get('/usuario/delete/{id}', [UsuarioController::class,'destroy'])->name('user.destroy');
