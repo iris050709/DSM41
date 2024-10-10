@@ -9,7 +9,7 @@
     @yield('styles')<!--ES UN CONTENEDOR O UN PRODUCTOR-->
 </head>
 <body>
-    <div class="conteiner">
+    <div class="container">
         @yield('content')
     </div>
 </body>
