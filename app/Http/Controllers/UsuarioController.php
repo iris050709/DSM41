@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\SweetAlertServiceProvider;
+use RealRashid\SweetAlert\Facades\Alert; #usado para el sweet alert
 
 class UsuarioController extends Controller
 {
@@ -73,7 +74,9 @@ class UsuarioController extends Controller
             'email' =>  Str::random(10).'@gmail', //PARA QUE NO SEA REPETITIVO EL CORRECTO
             'password' => Hash::make("Hola123")
         ]);
-        return view('vistas.list_users');
+        Alert::success('Exito Usuario Creado', 'El usuario ha sido creado')->flash();//EL  FLASH ES PARA QUE NO SE ELIMINE SOLO
+        //return view('vistas.list_users'); //PARA REDIRECCIONAR A UNA VISTA
+        return redirect()->route('user.list'); //PARA REDIRECCIONAR A UNA RUTA
     }
     
 
@@ -117,6 +120,7 @@ class UsuarioController extends Controller
         //BORRADO LOGICO: CAMBIA EL STATUS DE ACTIVO A INACTIVO
         $usuario = Usuario::find($id);
         $usuario->delete();
+        //Alert::success('Success', '¡USUARIO ELIMINADO!');
         return redirect()->route('user.list');
     }
 

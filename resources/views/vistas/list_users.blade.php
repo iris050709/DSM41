@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="hola.css">
 @endsection
 @section('content')
+@include('sweetalert::alert')
     <h1>USER LIST</h1>
 <table class="table table-striped">
     @foreach($usuarios as $usuario)
