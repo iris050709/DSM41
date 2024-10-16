@@ -120,7 +120,7 @@ class UsuarioController extends Controller
         //BORRADO LOGICO: CAMBIA EL STATUS DE ACTIVO A INACTIVO
         $usuario = Usuario::find($id);
         $usuario->delete();
-        //Alert::success('Success', '¡USUARIO ELIMINADO!');
+        Alert::success('ELIMINADO', '¡USUARIO ELIMINADO!');
         return redirect()->route('user.list');
     }
 

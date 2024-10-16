@@ -78,6 +78,22 @@
         width: 100%; /* Ancho completo */
         font-size: 1.3rem; /* Tamaño del texto del botón aumentado */
         transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+        font-weight: bold;
+    }
+    .btn{
+        background-color: #6f42c1; /* Color morado para el botón */
+        color: #ffffff; /* Texto blanco en el botón */
+        border: none; /* Sin borde */
+        padding: 12px; /* Espaciado interno */
+        border-radius: 4px; /* Bordes redondeados */
+        cursor: pointer; /* Cursor pointer al pasar por encima */
+        width: 100%; /* Ancho completo */
+        font-size: 1.3rem; /* Tamaño del texto del botón aumentado */
+        transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    }
+    .btn:hover{
+        background-color: #5a32a1; /* Color más oscuro en hover */
+        transform: translateY(-2px); /* Efecto de elevación en hover */
     }
     input[type="submit"]:hover {
         background-color: #5a32a1; /* Color más oscuro en hover */
@@ -127,6 +143,7 @@
             <div class="form-group">
                 <input type="submit" value="{{ isset($products) ? 'EDITAR' : 'ENVIAR' }}">
             </div>
+            <a href="{{ route('products.list') }}" class="btn btn-primary"><strong>Volver a la lista</strong></a>
         </form>
     </div>
 @endsection

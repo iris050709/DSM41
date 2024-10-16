@@ -24,7 +24,7 @@ Route::delete('/destroy/{usuario}', [UsuarioController::class, 'destroy'])->name
 
 // Ruta para mostrar un usuario específico
 Route::get('/show/{usuario}', [UsuarioController::class, 'show'])->name('usuario.show');
-Route::get('/usuario/creado', [UsuarioController::class, 'create']);
+Route::get('/usuario/creado', [UsuarioController::class, 'create'])->name('user.create');
 Route::post('/usuario/creado', [UsuarioController::class, 'store'])->name('user.store');
 Route::get('/usuario/list', [UsuarioController::class,'list'])->name('user.list');
 Route::get('/usuario/update/{id}', [UsuarioController::class,'edit'])->name('user.update');
