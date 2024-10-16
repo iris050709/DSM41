@@ -5,90 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crear Nuevo Producto</title>
-    <link rel="stylesheet" href="hola.css"> <!-- Si ya tienes este archivo -->
+    <link rel="stylesheet" href="hola.css">
     <style>
         body {
-            background-color: #f8f9fa; /* Fondo claro */
-            font-family: 'Arial', sans-serif; /* Fuente del texto */
-            margin: 0; /* Sin márgenes */
-            padding: 0; /* Sin espaciado interno */
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         h1 {
-            color: #6f42c1; /* Color morado para el título */
+            color: #6f42c1;
             text-align: center;
-            margin: 20px 0; /* Espaciado arriba y abajo */
-            font-size: 2rem; /* Tamaño del texto del título */
+            margin: 20px 0;
+            font-size: 2rem;
         }
         .form-container {
-            background-color: #ffffff; /* Fondo blanco para el formulario */
-            border-radius: 8px; /* Bordes redondeados */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
-            max-width: 400px; /* Ancho máximo del formulario */
-            margin: 40px auto; /* Centrar el contenedor */
-            padding: 20px; /* Espaciado interno */
-            transition: transform 0.3s; /* Transición para el efecto hover */
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            transition: transform 0.3s;
         }
         .form-container:hover {
-            transform: translateY(-5px); /* Elevar el formulario al pasar el ratón */
+            transform: translateY(-5px);
         }
         .form-group {
-            margin-bottom: 15px; /* Espaciado entre grupos de formulario */
+            margin-bottom: 15px;
         }
         label {
-            display: block; /* Mostrar label como bloque */
-            margin-bottom: 5px; /* Espaciado inferior */
-            font-weight: bold; /* Texto en negrita */
-            color: #495057; /* Color del texto */
-            font-size: 1rem; /* Tamaño del texto de las etiquetas */
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+            font-size: 1rem;
         }
         input[type="text"],
         input[type="number"],
         textarea {
-            width: calc(100% - 22px); /* Ancho completo menos el padding */
-            padding: 10px; /* Espaciado interno */
-            border: 1px solid #ced4da; /* Borde gris claro */
-            border-radius: 4px; /* Bordes redondeados */
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna */
-            font-size: 1rem; /* Tamaño del texto en los campos */
-            transition: border-color 0.3s, box-shadow 0.3s; /* Transición para el borde y sombra */
-            margin: 0 auto; /* Centrar los inputs */
-            display: block; /* Forzar a que se comporte como bloque para el centrado */
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            margin: 0 auto;
+            display: block;
         }
         input[type="text"]:focus,
         input[type="number"]:focus,
         textarea:focus {
-            border-color: #6f42c1; /* Cambia el color del borde al foco */
-            outline: none; /* Sin contorno al foco */
-            box-shadow: 0 0 5px rgba(111, 66, 193, 0.5); /* Sombra al foco */
+            border-color: #6f42c1;
+            outline: none;
+            box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
         }
         textarea {
-            resize: vertical; /* Permitir redimensionar solo verticalmente */
-            height: 80px; /* Altura inicial del textarea */
+            resize: vertical;
+            height: 80px;
         }
         input[type="submit"] {
-            background-color: #6f42c1; /* Color morado para el botón */
-            color: #ffffff; /* Texto blanco en el botón */
-            border: none; /* Sin borde */
-            padding: 12px; /* Espaciado interno */
-            border-radius: 4px; /* Bordes redondeados */
-            cursor: pointer; /* Cursor pointer al pasar por encima */
-            width: 100%; /* Ancho completo */
-            font-size: 1.1rem; /* Tamaño del texto del botón */
-            transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+            background-color: #6f42c1;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.2s;
         }
         input[type="submit"]:hover {
-            background-color: #5a32a1; /* Color más oscuro en hover */
-            transform: translateY(-2px); /* Efecto de elevación en hover */
+            background-color: #5a32a1;
+            transform: translateY(-2px);
         }
         .error {
-            color: #dc3545; /* Color rojo para mensajes de error */
-            margin-bottom: 15px; /* Espaciado inferior */
-            font-weight: bold; /* Texto en negrita para errores */
+            color: #dc3545;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
         .success-message {
-            color: #28a745; /* Color verde para mensajes de éxito */
-            font-weight: bold; /* Texto en negrita para mensajes de éxito */
-            margin-bottom: 15px; /* Espaciado inferior */
+            color: #28a745;
+            font-weight: bold;
+            margin-bottom: 15px;
         }
     </style>
 </head>

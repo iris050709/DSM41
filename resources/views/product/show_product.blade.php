@@ -3,81 +3,82 @@
 @section('styles')
 <style>
     body {
-        background-color: #f8f9fa; /* Fondo claro */
-        font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente más formal */
-        margin: 0; /* Sin márgenes */
-        padding: 20px; /* Espaciado interno */
-        font-size: 1rem; /* Tamaño de fuente general */
+        background-color: #f8f9fa;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        font-size: 1rem;
     }
 
     .container {
-        max-width: 700px; /* Ancho máximo del contenedor */
-        margin: auto; /* Centrando el contenedor */
-        padding: 20px; /* Espaciado interno del contenedor */
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
     }
 
     h1 {
-        color: #343a40; /* Color del título */
-        font-weight: 700; /* Negrita para el título */
-        margin-bottom: 20px; /* Espaciado inferior */
-        text-align: center; /* Centrar título */
-        font-size: 5rem; /* Tamaño de fuente aumentado para el título */
+        color: #343a40;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 5rem;
     }
 
     .card {
-        border-radius: 12px; /* Bordes más redondeados */
-        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
-        transition: transform 0.3s; /* Transición para el efecto hover */
-        border: none; /* Sin borde */
-        margin-bottom: 20px; /* Espacio entre tarjetas */
+        border-radius: 12px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s;
+        border: none;
+        margin-bottom: 20px;
     }
 
     .card:hover {
-        transform: translateY(-5px); /* Elevar la tarjeta al pasar el ratón */
+        transform: translateY(-5px);
     }
 
     .card-header {
-        background-color: #6f42c1; /* Fondo del header de la tarjeta */
-        color: white; /* Color del texto */
-        padding: 15px; /* Espaciado interno */
-        border-top-left-radius: 12px; /* Bordes redondeados superiores */
-        border-top-right-radius: 12px; /* Bordes redondeados superiores */
-        font-size: 1.5rem; /* Tamaño del título de la tarjeta */
-        font-weight: 600; /* Negrita */
+        background-color: #6f42c1;
+        color: white;
+        padding: 15px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 
     .card-body {
-        padding: 20px; /* Espaciado interno del cuerpo de la tarjeta */
+        padding: 20px;
     }
 
     .card-text {
-        font-size: 1.25rem; /* Tamaño del texto aumentado */
-        margin-bottom: 15px; /* Espaciado entre líneas */
-        color: #495057; /* Color del texto */
-        font-weight: 500; /* Negrita para el contenido */
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+        color: #495057;
+        font-weight: 500;
     }
 
     .btn-primary {
-        background-color: #6f42c1; /* Color morado para el botón */
-        border: none; /* Sin borde */
-        transition: background-color 0.3s; /* Transición suave */
-        padding: 12px 25px; /* Espaciado del botón */
-        font-size: 1.5rem; /* Tamaño de fuente del botón aumentado */
-        border-radius: 5px; /* Bordes redondeados del botón */
-        display: inline-block; /* Alinear el botón */
-        text-align: center; /* Centrar texto del botón */
-        color: white; /* Color del texto del botón */
-        font-weight: 600; /* Negrita para el texto del botón */
+        background-color: #6f42c1;
+        border: none;
+        transition: background-color 0.3s;
+        padding: 12px 25px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        font-weight: 600;
     }
 
     .btn-primary:hover {
-        background-color: #5a32a1; /* Color más oscuro en hover */
+        background-color: #5a32a1;
     }
 
     .text-muted {
-        color: #868e96; /* Color para texto menos importante */
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+        color: #868e96;
+        font-size: 0.9rem;
     }
+
 </style>
 @endsection
 

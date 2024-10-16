@@ -8,17 +8,17 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #e9ecef; /* Fondo suave */
+            background-color: #e9ecef; 
         }
         .card {
-            border-radius: 10px; /* Bordes redondeados */
+            border-radius: 10px; 
         }
         .card-header {
-            background-color: #4a1a66; /* Color azul */
-            color: white; /* Texto blanco */
+            background-color: #4a1a66;
+            color: white;
         }
         h4 {
-            color: #baa3e6; /* Color morado */
+            color: #baa3e6; 
             font-weight: bold; 
         }
         .btn-primary {
@@ -80,8 +80,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

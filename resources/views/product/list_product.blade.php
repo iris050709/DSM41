@@ -4,61 +4,62 @@
     <link rel="stylesheet" href="hola.css">
     <style>
         body {
-            background-color: #f8f9fa; /* Fondo claro */
+            background-color: #f8f9fa;
         }
         h1 {
-            color: #6f42c1; /* Color morado para el título */
+            color: #6f42c1;
             text-align: center;
             margin-bottom: 30px;
         }
         .table-container {
-            margin: 0 auto; /* Centrar el contenedor de la tabla */
-            width: 95%; /* Ancho del contenedor */
+            margin: 0 auto;
+            width: 95%;
         }
         .table {
-            background-color: #ffffff; /* Fondo blanco para la tabla */
-            border-radius: 8px; /* Bordes redondeados */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            width: 100%; /* Ancho completo */
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
         .table th, .table td {
-            text-align: center; /* Centrar texto en encabezados y celdas */
+            text-align: center;
         }
         .table th {
-            background-color: #6f42c1; /* Encabezados en morado */
-            color: #ffffff; /* Texto blanco en encabezados */
+            background-color: #6f42c1;
+            color: #ffffff;
         }
         .btn-primary {
-            background-color: #6f42c1; /* Botón de crear en morado */
-            border: none; /* Sin borde */
+            background-color: #6f42c1;
+            border: none;
         }
         .btn-info {
-            background-color: #17a2b8; /* Color info */
+            background-color: #17a2b8;
         }
         .btn-warning {
-            background-color: #ffc107; /* Color de advertencia */
+            background-color: #ffc107;
         }
         .btn-danger {
-            background-color: #dc3545; /* Color peligro */
+            background-color: #dc3545;
         }
         .btn:hover {
-            opacity: 0.8; /* Efecto hover */
+            opacity: 0.8;
         }
         .pagination {
-            justify-content: center; /* Centrar la paginación */
+            justify-content: center;
         }
         .pagination .page-link {
-            border-radius: 5px; /* Bordes redondeados */
-            margin: 0 5px; /* Espaciado entre botones */
+            border-radius: 5px;
+            margin: 0 5px;
         }
         .pagination .page-item.active .page-link {
-            background-color: #6f42c1; /* Fondo morado para el botón activo */
-            color: #ffffff; /* Texto blanco para el botón activo */
+            background-color: #6f42c1;
+            color: #ffffff;
         }
         .pagination .page-link:hover {
-            background-color: #6f42c1; /* Efecto hover en los enlaces */
-            color: #ffffff; /* Texto blanco en hover */
+            background-color: #6f42c1;
+            color: #ffffff;
         }
+
     </style>
 @endsection
 

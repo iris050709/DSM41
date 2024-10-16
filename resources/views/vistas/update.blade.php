@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            background-color: #e9ecef; /* Fondo suave */
+            background-color: #e9ecef; 
         }
         h4 {
-            color: #6f42c1; /* Color morado */
+            color: #6f42c1; 
             font-weight: bold; 
             font-size: 2rem; 
         }
         .card {
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para la tarjeta */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
         .btn-success {
             background-color: #5528a7; 
