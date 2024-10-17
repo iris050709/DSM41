@@ -144,7 +144,7 @@
             <div class="form-group">
                 <input type="submit" value="{{ isset($products) ? 'EDITAR' : 'ENVIAR' }}">
             </div>
-            <a href="{{ route('products.list') }}" class="btn btn-primary"><strong>Volver a la lista</strong></a>
+            <a href="{{ route('products.list') }}" class="btn btn-primary"><strong>CANCELAR</strong></a>
         </form>
     </div>
 @endsection

@@ -76,10 +76,26 @@
             font-size: 1.1rem;
             transition: background-color 0.3s, transform 0.2s;
         }
-        input[type="submit"]:hover {
+        .btn {
+            background-color: #6f42c1;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 94%;  
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: block;  
+        }
+
+        .btn:hover {
             background-color: #5a32a1;
             transform: translateY(-2px);
         }
+
         .error {
             color: #dc3545;
             margin-bottom: 15px;
@@ -122,7 +138,8 @@
                 <label for="stock">Stock:</label>
                 <input type="number" name="stock" id="stock" value="{{ old('stock') }}" required>
             </div>
-            <input type="submit" value="ENVIAR">
+            <input type="submit" value="ENVIAR"><br><br>
+            <a href="{{ route('products.list') }}" class="btn"><strong>CANCELAR</strong></a>
         </form>
     </div>
 </body>
