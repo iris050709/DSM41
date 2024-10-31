@@ -3,6 +3,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\CheckAdmin;
 
 Route::get('/', function () {
     return view('welcome');
@@ -40,8 +41,9 @@ Route::get('/home', function(){
 
 Route::get('/product/created', [ProductController::class, 'create'])->name('products.create');
 Route::post('/product/created', [ProductController::class, 'store'])->name('products.store');
-Route::get('/product/list', [ProductController::class,'list'])->name('products.list');
+Route::get('/product/list', [ProductController::class, 'list'])->middleware(CheckAdmin::class)->name('products.list');
 Route::get('/product/show/{product}', [ProductController::class,'show'])->name('products.show');
 Route::get('/product/update/{id}', [ProductController::class,'edit'])->name('products.update');
 Route::post('/product/update', [ProductController::class,'update'])->name('products.update.data');
 Route::get('/product/delete/{id}', [ProductController::class,'destroy'])->name('products.destroy');
+

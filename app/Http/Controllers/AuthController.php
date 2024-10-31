@@ -3,21 +3,31 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    public function showLogin(){
+    public function showLogin()
+    {
         return view('auth.login');
     }
-    public function login(Request $request){
-        //dd($request->all());
+
+    public function login(Request $request)
+    {
         $request->validate([
             'email' => 'required|string|email',
             'password' => 'required|string'
         ]);
-        if(auth()->attempt(['email' => $request->email, 'password' => $request->password])){
+
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            if (Auth::user()->role === 'admin') {
+                return redirect()->route('products.list');
+            }
             return redirect()->route('home');
         }
-        return redirect()->back();//regresa a la vista anterior
+
+        return redirect()->back()->withErrors([
+            'email' => 'Las credenciales no coinciden con nuestros registros.'
+        ]);
     }
 }
